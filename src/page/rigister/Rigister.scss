@@ -1,0 +1,28 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.signup{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 100px;
+    .signup--input{
+        padding: 5px;
+        width: 95%;
+        margin-left: 10px;
+    }
+    .signup--label{
+        color: rgb(80, 120, 204);
+        margin-left: -400px;
+    }
+    .signup--button{
+        width: 400px;
+        margin: 40px;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+}
