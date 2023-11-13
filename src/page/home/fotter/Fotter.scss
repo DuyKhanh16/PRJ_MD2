@@ -1,0 +1,26 @@
+.fotter{
+    width: 100vw;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    a{
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+    .fotter__logo{
+        margin-top: 30px;
+        width: 300px;
+    }
+    .fotter__address{
+        margin-top: 35px;
+    }
+    .fotter__support{
+        margin-top: 35px;
+        margin-right: 10px;
+    }
+}

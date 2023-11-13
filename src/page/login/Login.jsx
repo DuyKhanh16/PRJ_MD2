@@ -12,6 +12,10 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { toast } from '../../utils/toast/toast';
+
+import "./Login.scss"
+
 
 function Copyright(props) {
   return (
@@ -55,7 +59,7 @@ export default function SignInSide() {
         }
       
     }else{
-        alert("Vui lòng nhập Email và Password")
+        // toast("Vui lòng nhập đủ thông tin")
     }
   
   };
@@ -63,14 +67,14 @@ console.log(userLogin);
   return (
     <ThemeProvider theme={defaultTheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
-        <CssBaseline />
+        <CssBaseline classes="signin--icon" />
         <Grid
           item
           xs={false}
           sm={4}
           md={7}
           sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
+            backgroundImage: 'url(https://images.pexels.com/photos/18914149/pexels-photo-18914149/free-photo-of-ca-phe-c-c-u-ng-ghi-chu.jpeg?auto=compress&cs=tinysrgb&w=1600)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -78,14 +82,16 @@ console.log(userLogin);
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square className='background'>
           <Box
+          
             sx={{
               my: 8,
               mx: 4,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              // backgroundColor: "red"
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -122,6 +128,8 @@ console.log(userLogin);
                 label="Remember me"
               />
               <Button
+              // style={{background:"transparent",fontWeight:600}}
+              className='btn--login'
                 type="submit"
                 fullWidth
                 variant="contained"

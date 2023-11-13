@@ -25,9 +25,9 @@ function InputSizesExample() {
     }
 
   return (
-    <>
+    <div className='containerMain'>
     <div className='signup'>
-   < SiGnuprivacyguard/>
+   < SiGnuprivacyguard className='signup--icon'/>
     <h2 style={{color:"rgb(80, 120, 204)"}}>SIGN UP</h2>
     <label htmlFor="" className='signup--label'>Name</label> 
       <Form.Control  type="text" placeholder="Create Name" className='signup--input' onChange={chargerValue} name='name' />
@@ -40,7 +40,7 @@ function InputSizesExample() {
       <Button variant='contained' className='signup--button' onClick={addUser}>SIGN UP</Button>
       <p>Already have an account? Sign in</p>
       </div>
-    </>
+    </div>
   );
 }
 
