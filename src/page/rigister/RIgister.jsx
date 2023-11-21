@@ -1,29 +1,47 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import uuid from 'react-uuid'
 import Form from 'react-bootstrap/Form';
 import { Button } from '@mui/material';
 import { SiGnuprivacyguard } from 'react-icons/si';
 import './Rigister.scss'
-function InputSizesExample() {
-    let listUser=JSON.parse(localStorage.getItem("listUser"))||[]
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import api from '../../service/apis/api.user'
 
+function InputSizesExample() {
+    const navLink=useNavigate()
     const [users,setUsers]=useState([])
     const [user,setUser]=useState({
         name:"",
         id:uuid(),
         email:"",
         password:"",
-        compelete:"active"
+        compelete:"active",
+        address:[],
+        cart:[],
+        avata:""
     })
     const chargerValue=(e)=>{
         setUser({...user,[e.target.name] : e.target.value})
     }
     const addUser=()=>{
-       
-        setUsers([...users,user])
-        localStorage.setItem("listUser",JSON.stringify(users))
+     
+      api.checkRegister(user.email)
+      .then((check)=>{
+        if (check.data.length!=0) {
+          alert("email đã tồn tại")
+        }else{
+          api.register(user)
+          alert("ok")
+          setTimeout(() => {
+          navLink("/login")
+          }, 3000);
+        }
+      })
     }
-
+    const login=()=>{
+      navLink("/login")
+    }
   return (
     <div className='containerMain'>
     <div className='signup'>
@@ -38,7 +56,8 @@ function InputSizesExample() {
       <label htmlFor="" className='signup--label'>Password</label>
       <Form.Control  type="text" placeholder="Create Password " className='signup--input'  onChange={chargerValue} name='password' />
       <Button variant='contained' className='signup--button' onClick={addUser}>SIGN UP</Button>
-      <p>Already have an account? Sign in</p>
+      <p>Already have an account? <span onClick={login} style={{color:"blue"}}>Sign in</span></p>
+      
       </div>
     </div>
   );

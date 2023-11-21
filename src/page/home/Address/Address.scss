@@ -1,0 +1,218 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.addressContainer{
+    padding-top: 50px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.99);
+    width: 80%;
+    // height: 250px;
+    // background-color: aquamarine;
+    h2{
+        color: rgb(132, 107, 107);
+    }
+    h3{
+        padding-top: 120px;
+        font-size: 20px;
+    }
+    .address1{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/07/Untitled-1.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address2{
+        height: 250px;
+        padding: 10px;
+        background-position:center ;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2023/11/DSC00252-Edit-scaled.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    
+    .address3{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-position:center ;
+        background-image:url(https://phela.vn/wp-content/uploads/2023/04/345164351_224765480253018_284661011840576386_n.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address4{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-position:center ;
+        background-image:url(https://phela.vn/wp-content/uploads/2023/01/Phe-La-CH-LONG-BIEN_fb-01-scaled.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address5{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/10/DSC01126.png) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address6{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-position:center ;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/08/DSC00022-1.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address7{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-position:center ;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/05/Pla-TT-2.png) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address8{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-position:center ;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/11/Phe-La-DL-1.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address9{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-position:center ;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/05/z3370436043377_39fd720c6b241662c3eb0662703ccd09.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address10{
+        height: 250px;
+        padding: 10px;
+        background-position:center ;
+        border: 5px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/01/DSC00746-scaled.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address11{
+        height: 250px;
+        padding: 10px;
+        background-position:center ;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/07/186503387_161194879286573_4841292706754004551_n-2048x779.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address12{
+        height: 250px;
+        padding: 10px;
+        background-position:center ;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/09/DSC06584-scaled-1.jpg) ;
+        background-size: cover;
+        margin: 20px;
+    }
+    .address13{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/07/DSC09078-scaled.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address14{
+        height: 250px;
+        padding: 10px;
+        border: 5px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2023/07/web-2048x778.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address15{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/07/Untitled-1.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address16{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/07/Untitled-1.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address17{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2023/03/anh-vuong.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address18{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/10/web.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address19{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/07/1-scaled.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address20{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2022/07/DSC07276-1-scaled.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address21{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2023/06/Phe-La_cover-2200x836px-HOI-AN-01-2048x778.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+    .address22{
+        height: 250px;
+        padding: 10px;
+        border: 10px solid white;
+        background-image:url(https://phela.vn/wp-content/uploads/2021/07/186503387_161194879286573_4841292706754004551_n-2048x779.jpg) ;
+        background-size: cover;
+        background-position:center ;
+        margin: 20px;
+    }
+}

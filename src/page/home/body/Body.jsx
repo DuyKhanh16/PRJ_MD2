@@ -1,10 +1,11 @@
 import React from 'react'
-import Story from '../story/Story'
-
+import Intro from '../intro/Intro'
+import Address from '../Address/Address'
 export default function Body() {
   return (
     <div>
-     <Story></Story>
-    </div>
+      <Intro></Intro>
+      <Address></Address>
+ </div>
   )
 }
