@@ -71,8 +71,14 @@ const dispatch=useDispatch()
       api.checkLogin(userLogin)
       .then((check)=>{
         if (check.data.length!=0) {
-          alert("đang nhập thành công")
-          linknav("/");
+          alert("đang nhập ADMIN")
+          if (userLogin.email=="phelaadmin@gmail.com") {
+            linknav("/admin")
+          }else{
+            alert("Đăng nhập thành công")
+            linknav("/");
+          }
+         
           localStorage.setItem("currentUsers",JSON.stringify(check.data[0]))
         }else{
           alert("sai mật khẩu hoặc email")

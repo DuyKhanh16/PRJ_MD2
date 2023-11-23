@@ -3,7 +3,7 @@ import './Fotter.scss'
 
 export default function Fotter() {
   return (
-    <div className='fotter'>
+    <div className='fotter' id='fotter'>
       <div className="fotter__logo">
         <img src="https://phela.vn/wp-content/uploads/2021/07/group-20210119101820.png" alt="" />
       </div>
