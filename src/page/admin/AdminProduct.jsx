@@ -20,6 +20,7 @@ export default function AdminProduct() {
   });
 
   const [urlImg, setUrlImg] = useState(null);
+  const [text,setText]=useState()
   
   const chengeImage = (e) => {
     let file = e.target.files[0];
@@ -31,19 +32,27 @@ export default function AdminProduct() {
       });
     });
   };
-
   const [product,setProduct]= useState(
     {
       name:"",
-      img:urlImg,
-      
+      img:"",
+      price:0,
+      quantity:0,
+      class:"",
+      describe:""
     }
   )
+    const changeValue=(e)=>{
+      setText(e.target.valua)
+      setProduct({...product,[e.target.name]:e.target.value,img:urlImg})
 
+    }
   const addProduct = () => {
   
 
   };
+  console.log(product);
+ console.log(urlImg);
 
   return (
     <div>
@@ -58,16 +67,16 @@ export default function AdminProduct() {
       >
         <h4>Thêm sản Phẩm</h4>
         <label htmlFor="">Tên Sản Phẩm:</label>
-        <Form.Control type="text" placeholder="Tên Sản Phẩm" />
+        <Form.Control onChange={changeValue} name="name" type="text" placeholder="Tên Sản Phẩm" value={text} />
         <label htmlFor="">Ảnh Sản Phẩm:</label>
-        <Form.Control type="file" name="name" onChange={chengeImage} />
+        <Form.Control type="file"  onChange={chengeImage} />
         <div style={{height:100,width:100,backgroundColor:"#ccc", marginLeft:0}} ><img width={100} src={urlImg} alt="Upload" /></div>
-        <label htmlFor="">Giá Sản Phẩm:</label>
-        <Form.Control type="text" placeholder="Giá Sản Phẩm" />
+        <label  htmlFor="">Giá Sản Phẩm:</label>
+        <Form.Control onChange={changeValue} type="number" name="price" value={text}  placeholder="Giá Sản Phẩm" />
         <label htmlFor="">Số Lượng:</label>
-        <Form.Control type="text" placeholder="Số Lượng Sản Phẩm" />
+        <Form.Control onChange={changeValue} type="number" name="quantity" value={text} placeholder="Số Lượng Sản Phẩm" />
         <p>Phân Loại Sản Phẩm:</p>
-        <select name="class">
+        <select name="class"  onChange={changeValue}>
           <option value="cafe">Cà Phê</option>
            <option value="olong">Ô long Matcha</option>
           <option value="syphon">Syphon</option>
@@ -77,7 +86,7 @@ export default function AdminProduct() {
           <option value="v60">V60</option>
         </select> <br />
         <label htmlFor="">Thêm Mô Tả:</label>
-        <Form.Control type="text" placeholder="Mô Tả" />
+        <Form.Control onChange={changeValue} type="text" name="describe" value={text} placeholder="Mô Tả" />
         <Button
           variant="contained"
           style={{ marginLeft:260,marginTop:20}}
