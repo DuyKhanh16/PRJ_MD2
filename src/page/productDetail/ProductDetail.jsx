@@ -18,31 +18,32 @@ export default function ProductDetail(props) {
       centered
       
     >
-      <Modal.Header closeButton >
+      {/* <Modal.Header closeButton >
         <Modal.Title id="contained-modal-title-vcenter">
         Chi Tiết Sản Phẩm
-        </Modal.Title>
-      </Modal.Header>
+        </Modal.Title> 
+      </Modal.Header>  */}
       <Modal.Body  style={{width:"100%"}} >
         <div className='containerDetail'>
-        <div>
+        <div className='containerDetail__l'>
         <img width={400} src={prdDetail?.img} alt="" />
         </div>
-        <div>
-        <p>  {prdDetail?.name}</p>
-        <p>{prdDetail?.price}</p>
-        <p>Thông Tin Sản Phẩm</p>
+        <div className='containerDetail__r'>
+        <p style={{fontSize:30, fontWeight:600}}>  {prdDetail?.name}</p>
+        <p style={{marginLeft:20,fontSize:20,color:"brown"}} >{prdDetail?.price}</p>
+        <p>-Thông Tin Sản Phẩm</p>
         <p>{prdDetail?.describe}</p>
-        <div style={{display:'flex'}}>
-        <Button variant="primary" size="lg">
+        <div className='quantity'>
+        <Button className="btnDetail" size="lg">
         -
         </Button>{' '}
-        <p>0</p>
-        <Button variant="primary" size="lg">
+        <p style={{fontSize:25, marginTop:15}}>0</p>
+        <Button className="btnDetail" size="lg">
         +
         </Button>{' '}
         </div>
-        <Button variant="primary" size="lg">
+        <Button  style={{marginLeft:190}}
+        variant="primary" size="lg">
 Mua Ngay
         </Button>{' '}
         </div>
@@ -50,9 +51,9 @@ Mua Ngay
        
         
       </Modal.Body>
-      <Modal.Footer>
+      {/* <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
+      </Modal.Footer> */}
     </Modal>
   )
 }

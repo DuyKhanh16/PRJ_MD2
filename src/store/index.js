@@ -26,7 +26,7 @@ const state = createSlice({
       })
       .addCase(getAllProduct.fulfilled, (state, action) => {
         // xử lý khi thành công
-        state.product.push(action.payload);
+        state.product=action.payload;
       })
       .addCase(getAllProduct.rejected, (state, action) => {
         // Xử lý khi thất bại

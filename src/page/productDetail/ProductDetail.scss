@@ -1,0 +1,20 @@
+.containerDetail{
+    display: flex;
+    .containerDetail__r{
+        width: 500px;
+       .quantity{
+        display: flex;
+      width: 150px;
+       }
+    }
+    .btnDetail{
+     
+        background-color: white;
+        border: none;
+        font-size: 30px;
+        color: red;
+    }
+    .btnDetail:hover{
+        background-color: rgb(225, 185, 22);
+    }
+}

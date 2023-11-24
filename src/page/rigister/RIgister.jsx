@@ -19,6 +19,7 @@ function InputSizesExample() {
         compelete:"active",
         address:[],
         cart:[],
+        order:[],
         avata:""
     })
     const chargerValue=(e)=>{
